@@ -111,3 +111,17 @@ html {
     /* стиль шрифта */
     font-style: italic;
 }
+
+/* IMFellGreatPrimerSC-Regular */
+@font-face {
+    /* семейство шрифта */
+    font-family: 'IMFellGreatPrimerSC';
+    /* название шрифта в операционной системе пользователя */
+    src: local('IMFellGreatPrimerSC-Regular')
+        /* путь до ttf-образа шрифта */
+        url('/project 2/logo_type/source/fonts/IM/IMFellGreatPrimerSC-Regular.ttf') format('truetype');
+    /* начертание шрифта(насыщенность шрифта) */
+    font-weight: 400;
+    /* стиль шрифта */
+    font-style: normal;
+}
