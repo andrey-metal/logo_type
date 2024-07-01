@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- подключение global.css -->
-    <link rel="stylesheet" href="/project 2/logo_type/css/global.css">
+    <!-- подключение style.css -->
+    <link rel="stylesheet" href="/project 2/logo_type/css/style.css">
 </head>
 
 <body>
@@ -27,15 +27,52 @@
                 <!-- навигация по сайту -->
                 <nav class="menu">
                     <!-- меню всегда делается в виде списка -->
+                    <!-- ul.menu__list>li.menu__item*5>a.menu__link[href=#]
+                    ( > - вложенность, *5 - кол-во тегов(5), [] - свойства тегов ) -->
                     <ul class="menu__list">
-                        <li class="menu__item">Black</li>
-                        <li class="menu__item">Green</li>
-                        <li class="menu__item">White</li>
-                        <li class="menu__item">Oolong</li>
-                        <li class="menu__item">Pu-erh</li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Black</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Green</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">White</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Oolong</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Pu-erh</a>
+                        </li>
                     </ul>
-
                 </nav>
+                <!-- список действий для пользователя -->
+                <ul class="user-actions">
+                    <!-- корзина(для выбранного чая) -->
+                    <li class="user-actions__item">
+                        <a href="#" class="user-actions__link"><img src="/project 2/logo_type/source/image/svg/bag.svg"
+                                alt="bag"></a>
+                    </li>
+                    <!-- регистрация для пользователя -->
+                    <li class="user-actions__item">
+                        <a href="#" class="user-actions__link"><img
+                                src="/project 2/logo_type/source/image/svg/person.svg" alt="person"></a>
+                    </li>
+                    <!-- строка поиска -->
+                    <li class="user-actions__item">
+                        <!-- первый вариант (если строке поиска должна быть форма) -->
+                        <!-- <search>
+                            <form action="">
+                                <input type="search">
+                                <button type="submit"></button>
+                            </form>
+                        </search> -->
+                        <!-- второй вариант (в виде ссылки) -->
+                        <a href="#" class="user-actions__link"><img
+                                src="/project 2/logo_type/source/image/svg/search.svg" alt="search"></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
