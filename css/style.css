@@ -95,3 +95,11 @@ body {
 .user-actions__item-search {
     margin-left: 80px;
 }
+
+/* свойства для main */
+/* первая секция */
+/* настраиваем фоновое изображение */
+.top {
+    /* подключаем фоновое изображение */
+    background-image: url('/project 2/logo_type/source/image/jpg/Group\ 91.jpg');
+}
