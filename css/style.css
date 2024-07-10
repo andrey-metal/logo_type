@@ -7,6 +7,10 @@ html {
 *::after,
 *::before {
     box-sizing: inherit;
+    /* убираем внешние отступы */
+    margin: 0;
+    /* убираем внутренние отступы */
+    padding: 0;
 }
 
 /* свойста для ссылок(всех на сайте) */
@@ -86,12 +90,14 @@ body {
     margin-left: 77px;
 }
 
+/* свойства для корзины и регистрации */
 .user-actions {
     display: flex;
     align-items: center;
     gap: 0 20px;
 }
 
+/* свойства для search */
 .user-actions__item-search {
     margin-left: 80px;
 }
@@ -102,4 +108,42 @@ body {
 .top {
     /* подключаем фоновое изображение */
     background-image: url('/project 2/logo_type/source/image/jpg/Group\ 91.jpg');
+    /* при недостаточном размере фона, он не повторяется */
+    background-repeat: no-repeat;
+    /* положение изображения фона */
+    background-position: bottom center;
+    /* размер фона */
+    /* cover - масштабирует изображение как можно больше c сохранением пропорций изображения 
+    (изображение не становится сплющенным) */
+    background-size: cover;
+}
+
+/* свойства для блока для элементов, распологающихся на фоне */
+.top__inner {
+    /* минимальная фиксированная высота */
+    min-height: 500px;
+    /* цвет для текста внутри блока элементов, располагающихся на фоне */
+    color: #fff;
+    /* насыщенность текста */
+    font-weight: 400;
+    /* используем семейство шрифта */
+    font-family: "Cormorant", serif;
+}
+
+/* свойства для заголовка */
+.top__title {
+    font-size: 60px;
+    /* внешний отступ вниз */
+    margin-bottom: 20px;
+    /* максимально-возможная ширина(ограничение) */
+    max-width: 789px;
+    line-height: 1;
+}
+
+/* свойства для текста под заголовком */
+.top__text {
+    font-size: 24px;
+    margin-bottom: 48px;
+    max-width: 557px;
+    line-height: normal;
 }
