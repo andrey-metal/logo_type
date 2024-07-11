@@ -1,0 +1,80 @@
+/* глобальные настройки */
+
+html {
+    /* box-sizing - отвечает за расчитывание разных расстояний, учитываются или нет padding и margin и тд  */
+    box-sizing: border-box;
+    /* добавляем основной шрифт */
+    font-family: 'OpenSans';
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    /* убираем внешние отступы */
+    margin: 0;
+    /* убираем внутренние отступы */
+    padding: 0;
+}
+
+/* свойста для ссылок(всех на сайте) */
+a {
+    /* убираем декоративные линии */
+    text-decoration: none;
+    /* цвет унаследуется от родительского элемента */
+    color: inherit;
+}
+
+/* свойства для ссылок */
+ul {
+    /* убираем маркированный список */
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 400;
+    font-style: normal;
+    src: local('OpenSans-Regular'),
+        url('/project 2/logo_type/source/fonts/Open-Sans/OpenSans-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 300;
+    font-style: normal;
+    src: local('OpenSans-Light'),
+        url('/project 2/logo_type/source/fonts/Open-Sans/OpenSans-Light.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 400;
+    font-style: italic;
+    src: local('OpenSans-Italic'),
+        url('/project 2/logo_type/source/fonts/Open-Sans/OpenSans-Italic.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 600;
+    font-style: normal;
+    src: local('OpenSans-SemiBold'),
+        url('/project 2/logo_type/source/fonts/Open-Sans/OpenSans-SemiBold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Cormorant-Regular'),
+        url('/project 2/logo_type/source/fonts/Cormorant/Cormorant-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    font-weight: 400;
+    font-style: italic;
+    src: local('Cormorant-Italic'),
+        url('/project 2/logo_type/source/fonts/Cormorant/Cormorant-Italic.ttf') format('truetype'),
+}
