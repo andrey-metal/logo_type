@@ -7,6 +7,18 @@ html {
     font-family: 'OpenSans';
 }
 
+/* свойства для всех тегов и элементов в body */
+body {
+    /* добавление акцентного цвета */
+    color: #151618;
+    /* акцентный размер текста */
+    font-size: 20px;
+    /* насыщенность (толщина) текста */
+    font-weight: 300;
+    /* величина пространства между строками*/
+    line-height: 1.5;
+}
+
 *,
 *::after,
 *::before {
@@ -73,8 +85,8 @@ ul {
 
 @font-face {
     font-family: 'Cormorant';
-    font-weight: 400;
+    font-weight: 300;
     font-style: italic;
-    src: local('Cormorant-Italic'),
-        url('/project 2/logo_type/source/fonts/Cormorant/Cormorant-Italic.ttf') format('truetype'),
+    src: local('Cormorant-LightItalic'),
+        url('/project 2/logo_type/source/fonts/Cormorant/Cormorant-LightItalic.ttf') format('truetype'),
 }
