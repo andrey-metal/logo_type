@@ -98,6 +98,7 @@
     margin-bottom: 20px;
     /* максимально-возможная ширина(ограничение) */
     max-width: 789px;
+    /* величина пространства между строками в тексте */
     line-height: 1;
     /* по-умолчанию h(заголовки) имеют font-weight = 700, поэтому меняем */
     font-weight: 400;
@@ -114,10 +115,19 @@
 /* свойства для цитаты */
 .blockquote {
     /* выравнивание по центру */
-    font-family: 'Cormorant';
     text-align: center;
+    /* семейство шрифта */
+    font-family: 'Cormorant';
+    /* размер шрифта */
     font-size: 40px;
+    /* стиль шрифта */
     font-style: italic;
-    font-weight: 300;
     line-height: normal;
+    max-width: 704px;
+    /* выставляем текст по центру с margin вверх-вниз = 150*/
+    margin: 150px auto;
 }
+
+
+/* прописываем медиа-запросы(для адаптива) */
+/* @media */
