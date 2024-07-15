@@ -25,6 +25,19 @@
     min-height: 140px;
 }
 
+/* свойства для бургера */
+.menu__btn {
+    /* бургер не показывается*/
+    display: none;
+    /* ширина бургера */
+    width: 40px;
+    /* высота бургера */
+    height: 18px;
+}
+
+/* свойства для span бургера */
+.menu__btn span {}
+
 /* свойства для логотипа */
 .logo {
     /* увеличение внешнего отступа снизу (для выравнивания блоков header) */
@@ -112,8 +125,8 @@
     line-height: normal;
 }
 
-/* свойства для цитаты */
-.blockquote {
+/* свойства для текста цитаты */
+.blockquote__text {
     /* выравнивание по центру */
     text-align: center;
     /* семейство шрифта */
@@ -146,6 +159,33 @@
 
     .menu__list {
         margin-left: 60px;
+    }
+
+    /* убираем у логотипа отступ снизу */
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .header__inner {
+        min-height: auto;
+    }
+
+    .blockquote__text {
+        margin-top: 120px;
+        margin-bottom: 135px;
+    }
+}
+
+/* дополнительный медиа запрос, используемый при достижении 860px */
+@media(max-width: 860px) {
+    .menu__list {
+        /* свойство для ликвидации блока навигационного меню */
+        display: none;
+    }
+
+    .menu__btn {
+        /* отображаем (бургер) */
+        display: flex;
     }
 }
 
