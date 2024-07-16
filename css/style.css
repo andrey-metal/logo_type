@@ -32,11 +32,20 @@
     /* ширина бургера */
     width: 40px;
     /* высота бургера */
-    height: 18px;
+    height: 20px;
+    display: flex;
+    /* spanы располагаются один за другим */
+    flex-direction: column;
+    /* рраспределение spanов от начала до конца */
+    justify-content: space-between;
 }
 
 /* свойства для span бургера */
-.menu__btn span {}
+.menu__btn span {
+    background-color: #000;
+    height: 2px;
+    width: 100%;
+}
 
 /* свойства для логотипа */
 .logo {
