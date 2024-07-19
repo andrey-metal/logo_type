@@ -212,6 +212,7 @@
     }
 }
 
+/* адаптив при достижении экрана 768px */
 @media(max-width: 768px) {
     .header__inner {
         /* добавляем внутренние отступы блоку */
@@ -224,11 +225,11 @@
     }
 }
 
-@media(max-width: 700px) {
-    .logo {
-        /* располагаем лого в блоке (logo) */
-        margin-right: auto;
-        margin-left: auto;
+/* дополнительный медиа запрос, используемый при достижении 680px */
+@media(max-width: 680px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .top__title {
@@ -237,8 +238,15 @@
 
     .header__inner {
         /* добавляем внутренние отступы блоку */
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .blockquote__text {
+        font-size: 16px;
+        max-width: 376px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 }
 
@@ -247,10 +255,38 @@
         margin-right: 80px;
     }
 
-    .blockquote__text {
-        font-size: 16px;
-        max-width: 376px;
+    /* обращаемся непосредственно к картинке */
+    .logo img {
+        width: 39px;
+    }
+
+    .header__inner {
+        padding: 10px 0;
     }
 }
 
-@media(max-width: 360px) {}
+@media(max-width: 360px) {
+    .logo {
+        margin-right: 50px;
+    }
+
+    .user-actions__item-search {
+        margin-left: 0;
+    }
+
+    .top__title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .top__text {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .blockquote__text {
+        max-width: 340px;
+        margin-top: 70px;
+        margin-bottom: 80px;
+    }
+}
