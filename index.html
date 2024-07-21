@@ -38,7 +38,17 @@
                     <!-- меню всегда делается в виде списка -->
                     <!-- ul.menu__list>li.menu__item*5>a.menu__link[href=#]
                     ( > - вложенность, *5 - кол-во тегов(5), [] - свойства тегов ) -->
+                    <!-- Кроме того, что список является основным, 
+                    он также является 1 списком для элементов навигации(мобильное разрешение)
+                    настройка мобильного разрешения производиться в css-->
                     <ul class="menu__list">
+                        <!-- кнопка закрытия навигационного меню(мобильное разрешение) -->
+                        <li class="menu__close">
+                            <button class="menu__close-btn">
+                                <img src="/project 2/logo_type/source/image/svg/krest.svg" alt="close">
+                            </button>
+                        </li>
+                        <!-- навигационное меню и список 1 -->
                         <li class="menu__item">
                             <a href="#" class="menu__link">Black</a>
                         </li>
@@ -53,6 +63,40 @@
                         </li>
                         <li class="menu__item">
                             <a href="#" class="menu__link">Pu-erh</a>
+                        </li>
+                        <!-- 2 список для элементов навигации(мобильное разрешение) -->
+                        <li class="mobile-nav">
+                            <ul class="mobile-menu">
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile__menu-link">Contact Us</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile__menu-link">Our Blog</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile__menu-link">Shipping and Delivery</a>
+                                </li>
+                            </ul>
+                            <!-- 3 список для элементов действия(мобильное разрешение) -->
+                            <ul class="mobile-actions">
+                                <ul class="mobile-actions">
+                                    <!-- корзина(для выбранного чая) -->
+                                    <li class="mobile-actions__item">
+                                        <a href="#" class="mobile-actions__link"><img
+                                                src="/project 2/logo_type/source/image/svg/bag.svg" alt="bag"></a>
+                                    </li>
+                                    <!-- регистрация для пользователя -->
+                                    <li class="mobile-actions__item">
+                                        <a href="#" class="mobile-actions__link"><img
+                                                src="/project 2/logo_type/source/image/svg/person.svg" alt="person"></a>
+                                    </li>
+                                    <!-- строка поиска -->
+                                    <li class="mobile-actions__item">
+                                        <a href="#" class="mobile-actions__link"><img
+                                                src="/project 2/logo_type/source/image/svg/search.svg" alt="search"></a>
+                                    </li>
+                                </ul>
+                            </ul>
                         </li>
                     </ul>
                 </nav>

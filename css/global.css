@@ -43,6 +43,8 @@ button {
     padding: 0;
     /* убираем границы */
     border: none;
+    /* установка прозрачного фона */
+    background-color: transparent;
 }
 
 /* свойства для ссылок */
