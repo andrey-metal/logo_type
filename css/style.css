@@ -217,7 +217,38 @@
     }
 
     /* свойства для кнопки закрытия навигационного меню */
-    .menu__close-btn {}
+    .menu__close-btn {
+        /* закрывающий навигационное меню знак становиться абсолютным */
+        position: absolute;
+        /* размещение закрывающего знака(работает вместе с position: absolute) */
+        top: 20px;
+        right: 20px;
+    }
+
+    /* свойства для навигационного меню(мобильное расширение) */
+    .menu__item {
+        margin-bottom: 30px;
+        /* изменяем размер шрифта */
+        font-size: 24px;
+        /* изменяем шрифт */
+        font-family: 'Cormorant';
+    }
+
+    .mobile-menu {
+        padding-top: 60px;
+        margin: 60px 30px;
+        border-top: 2px solid #F7F2EA;
+    }
+
+    .mobile-menu__item {
+        margin-bottom: 35px;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .mobile-actions__item {
+        display: flex;
+    }
 
     .menu {
         /* порядок расположения элементов внутри контейнера */
