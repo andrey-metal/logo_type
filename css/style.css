@@ -81,7 +81,7 @@
 }
 
 /* свойства для search */
-.user-actions__item-search {
+.user-actions__item--search {
     margin-left: 80px;
 }
 
@@ -163,7 +163,7 @@
 /* в {} обращаемся к html-файлу, который хотим видоизменить */
 /* адаптив при достижении экрана 1000px */
 @media(max-width: 1000px) {
-    .user-actions__item-search {
+    .user-actions__item--search {
         margin-left: 30px;
     }
 
@@ -358,7 +358,7 @@
         margin-right: 50px;
     }
 
-    .user-actions__item-search {
+    .user-actions__item--search {
         margin-left: 0;
     }
 
