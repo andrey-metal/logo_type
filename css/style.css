@@ -217,6 +217,10 @@
         /* текст в элементах центрируется */
         text-align: center;
         padding-top: 60px;
+        /* transition настройка переходов */
+        /* transform посзволяет переход сделать более плавным(s - задержка) */
+        /* ease медленное начало, затем быстрое, после чего медленный конец */
+        transition: transform .5s ease;
     }
 
     /* означает элемент, который имеет как class menu__list(class1), так и menu__list--open(class2) */
