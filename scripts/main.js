@@ -8,6 +8,8 @@ const menuBtn = document.querySelector('.menu__btn');
 const menuClose = document.querySelector('.menu__close');
 // переменная для нахождения навигационного меню и его элементов
 const menuList = document.querySelector('.menu__list');
+// переменная для нахождения затемнённого фона
+const menuShadow = document.querySelector('.menu--close');
 
 // addEventListener добавляет элементу действие, которое будет выполнено после срабатывания события
 // например, на клик мышки(click)
@@ -20,10 +22,15 @@ menuBtn.addEventListener('click', () => {
     // menuList добавляем класс menu__list--open
     // classList.toggle() - метод добавляет класс, если его нет и удаляет, если есть
     menuList.classList.toggle('menu__list--open')
+    // скрипт для затемнённого фона
+    menuShadow.classList.toggle('menu--open')
 })
 
 // при клике по закрывающему символу навигационное меню закроется
 menuClose.addEventListener('click', () => {
     // classList.remove - метод для удаления класса
     menuList.classList.remove('menu__list--open')
+    // удаляем затемнение
+    menuShadow.classList.remove('menu--open')
 })
+
