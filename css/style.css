@@ -1,3 +1,4 @@
+/* header */
 /* для центрирования */
 .container {
     /* максимальная фиксированная ширина блока*/
@@ -169,6 +170,7 @@
     line-height: normal;
 }
 
+/* 2 секция */
 /* свойства для текста цитаты */
 .blockquote__text {
     /* выравнивание по центру */
@@ -185,232 +187,34 @@
     margin: 150px auto;
 }
 
-
-/* прописываем медиа-запросы(для адаптива) */
-/* в () записываем условие, при котором будет производиться media-запрос */
-/* в {} обращаемся к html-файлу, который хотим видоизменить */
-/* адаптив при достижении экрана 1000px */
-@media(max-width: 1000px) {
-    .user-actions__item--search {
-        margin-left: 30px;
-    }
-
-    .menu {
-        /* свойство автоматически расчитывает отступ справа
-        (без него не произойдёт нужного смещения всего блока) */
-        margin-right: auto;
-    }
-
-    .menu__list {
-        margin-left: 60px;
-    }
-
-    /* убираем у логотипа отступ снизу */
-    .logo {
-        margin-bottom: 0;
-    }
-
-    .header__inner {
-        min-height: auto;
-    }
-
-    .blockquote__text {
-        margin-top: 120px;
-        margin-bottom: 135px;
-    }
+/* 3 секция(ассортимент чая) */
+/* свойства для заголовка */
+.assortment__title {
+    font-family: 'Cormorant';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
-/* дополнительный медиа запрос, используемый при достижении 860px */
-@media(max-width: 860px) {
-    .menu__list {
-        /* перемещаем элемент на экране по оси Y
-        навигационное меню улетает за верхнюю часть экрана по оси Y*/
-        transform: translateY(-100%);
-        /* готовим выдвигающееся меню */
-        /* фон. изображение становиться абсолютным(никак не взаимодействует с другими элементами) */
-        position: absolute;
-        /* картинка начинается с левого верхнего угла секции*/
-        top: 0;
-        left: 0;
-        /* картинка продолжается до правого угла секции */
-        right: 0;
-        /* ширина выдвигающегося меню */
-        width: 480px;
-        /* центрирование выдвигающегося меню */
-        margin: 0 auto;
-        /* цвет выдвигающегося меню */
-        background-color: #fff;
-        /* каждый элемент занимает всю доступную горизонтальную ширину и располагается на новой строке */
-        display: block;
-        /* текст в элементах центрируется */
-        text-align: center;
-        padding-top: 60px;
-        /* transition настройка переходов */
-        /* transform посзволяет переход сделать более плавным(s - задержка) */
-        /* ease медленное начало, затем быстрое, после чего медленный конец */
-        transition: transform .5s ease;
-    }
-
-    /* означает элемент, который имеет как class menu__list(class1), так и menu__list--open(class2) */
-    /* cтили будут применяться ко всем элементам, которые одновременно имеют класс class1 и class2 */
-    .menu__list.menu__list--open {
-        /* перемещаем элемент на экране по оси Y
-        возвращаем навигационное меню на место*/
-        transform: translateY(0%);
-    }
-
-    .menu__btn {
-        /* отображаем (бургер) */
-        display: flex;
-    }
-
-    /* свойства для навигационного меню(мобильное расширение) */
-    .mobile-nav,
-    .menu__close {
-        /* подключаем элементы навигационного меню мобильного расширения */
-        display: block;
-    }
-
-    /* свойства для кнопки закрытия навигационного меню */
-    .menu__close-btn {
-        /* закрывающий навигационное меню знак становиться абсолютным */
-        position: absolute;
-        /* размещение закрывающего знака(работает вместе с position: absolute) */
-        top: 20px;
-        right: 20px;
-    }
-
-    /* свойства для навигационного меню(мобильное расширение) */
-    .menu__item {
-        margin-bottom: 30px;
-        /* изменяем размер шрифта */
-        font-size: 24px;
-        /* изменяем шрифт */
-        font-family: 'Cormorant';
-    }
-
-    .mobile-menu {
-        padding-top: 60px;
-        margin: 60px 30px;
-        border-top: 2px solid #F7F2EA;
-    }
-
-    .mobile-menu__item {
-        margin-bottom: 35px;
-        font-size: 13px;
-        font-weight: 300;
-    }
-
-    .mobile-actions {
-        background-color: #F7F2EA;
-        height: 60px;
-        /* внутренние отступы слева и справа */
-        padding: 0 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu {
-        /* порядок расположения элементов внутри контейнера */
-        /* выставляем бургер в самый левый угол */
-        order: -1;
-        /* полностью убираем правый внешний отступ */
-        margin-right: 0;
-    }
-
-    .logo {
-        /* располагаем лого в блоке (logo) */
-        margin-right: 154px;
-        margin-left: auto;
-    }
+/* свойства для чайного списка */
+.assortment__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 150px;
 }
 
-/* адаптив при достижении экрана 768px */
-@media(max-width: 768px) {
-    .header__inner {
-        /* добавляем внутренние отступы блоку */
-        padding-left: 64px;
-        padding-right: 64px;
-    }
-
-    .blockquote__text {
-        max-width: 640px;
-    }
+.assortment__item {
+    margin-right: 40px;
 }
 
-/* дополнительный медиа запрос, используемый при достижении 680px */
-@media(max-width: 680px) {
-    .container {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .top__title {
-        font-size: 40px;
-        line-height: normal;
-    }
-
-    .header__inner {
-        /* добавляем внутренние отступы блоку */
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .blockquote__text {
-        font-size: 16px;
-        max-width: 376px;
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-}
-
-@media(max-width: 480px) {
-    .logo {
-        margin-right: 80px;
-    }
-
-    /* обращаемся непосредственно к картинке */
-    .logo img {
-        width: 39px;
-    }
-
-    .header__inner {
-        padding: 10px 0;
-    }
-
-    .menu__list {
-        /* ширина навигационного меню */
-        width: 360px;
-    }
-}
-
-@media(max-width: 360px) {
-    .logo {
-        margin-right: 50px;
-    }
-
-    .user-actions__item--search {
-        margin-left: 0;
-    }
-
-    .top__title {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .top__text {
-        font-size: 13px;
-        margin-bottom: 30px;
-    }
-
-    .top__inner {
-        min-height: 367px;
-    }
-
-    .blockquote__text {
-        max-width: 340px;
-        margin-top: 70px;
-        margin-bottom: 80px;
-    }
+.assortment__name {
+    font-family: 'Cormorant';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
 }
