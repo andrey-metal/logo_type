@@ -198,16 +198,25 @@
     margin-bottom: 60px;
 }
 
+/* свойства для секции чайного списка */
+.assortment {
+    margin-bottom: 150px;
+}
+
 /* свойства для чайного списка */
 .assortment__list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 150px;
+    text-align: center;
+    gap: 0 40px;
 }
 
-.assortment__item {
-    margin-right: 40px;
+/* свойства для чайных картинок */
+.assortment__img {
+    /* фиксируем максимальную высоту и ширину картинок(картинки подстраиваются под размер экрана) */
+    max-width: 208px;
+    max-width: 208px;
+    /* на экране корректно распределяются все картинки */
+    width: 100%;
 }
 
 .assortment__name {
@@ -215,6 +224,5 @@
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
-    text-align: center;
     padding-top: 10px;
 }
