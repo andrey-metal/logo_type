@@ -38,6 +38,10 @@
     .assortment {
         margin: 120px 0;
     }
+
+    .assortment__title {
+        margin-bottom: 30px;
+    }
 }
 
 /* дополнительный медиа запрос, используемый при достижении 860px */
@@ -157,6 +161,19 @@
     .blockquote__text {
         max-width: 640px;
     }
+
+    .assortment__list {
+        /* flex-wrap определяет будут ли flex-элементы выстраиваться в одну строку или возможно многострочное размещение */
+        /* wrap указывает, что flex-элементы при необходимости могут переноситься на следующую строку,
+     если на предыдущей не хватает места */
+        flex-wrap: wrap;
+        /* центрируем картинки */
+        justify-content: center;
+    }
+
+    .assortment__title {
+        margin-bottom: 40px;
+    }
 }
 
 /* дополнительный медиа запрос, используемый при достижении 680px */
@@ -203,6 +220,23 @@
         /* ширина навигационного меню */
         width: 360px;
     }
+
+    .assortment__title {
+        margin-bottom: 30px;
+    }
+
+    .assortment {
+        margin: 60px 0;
+    }
+
+    .assortment__img {
+        max-width: 170px;
+    }
+
+    .assortment__title {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
 }
 
 @media(max-width: 360px) {
@@ -233,11 +267,8 @@
         margin-top: 70px;
         margin-bottom: 80px;
     }
+
+    .assortment {
+        margin: 80px 0;
+    }
 }
-
-
-
-/* flex-wrap определяет будут ли flex-элементы выстраиваться в одну строку или возможно многострочное размещение */
-/* wrap указывает, что flex-элементы при необходимости могут переноситься на следующую строку,
-     если на предыдущей не хватает места */
-/* flex-wrap: wrap; */
