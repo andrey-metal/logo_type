@@ -42,6 +42,15 @@
     .assortment__title {
         margin-bottom: 30px;
     }
+
+    .review {
+        margin-bottom: 120px;
+    }
+
+    .review__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 /* дополнительный медиа запрос, используемый при достижении 860px */
@@ -199,6 +208,14 @@
         max-width: 376px;
         margin-top: 60px;
         margin-bottom: 60px;
+    }
+
+    .review__item {
+        max-width: 220px;
+    }
+
+    .review__list {
+        gap: 20px;
     }
 }
 
