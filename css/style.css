@@ -101,6 +101,7 @@
     display: flex;
     align-items: center;
     /* позволяет добавить свободное пространство между элементами по горизонтали и вертикали */
+    /* первое значение - отступ для рядов, второе - отступ для колонок */
     gap: 0 65px;
     /* насыщенность шрифта */
     font-weight: 400;
@@ -236,17 +237,18 @@
 
 .review__list {
     display: flex;
-    gap: 26px;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 16px;
+    gap: 0 26px;
 }
 
 .review__item {
-    max-width: 280px;
+    /* flex-basis задаёт размер элемента по главной оси, перед тем как будет распределено оставшееся пространство. */
+    flex-basis: 280px;
 }
 
 .review__text {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 

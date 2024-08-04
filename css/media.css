@@ -43,9 +43,8 @@
         margin-bottom: 120px;
     }
 
-    .review__list {
-        flex-wrap: wrap;
-        justify-content: center;
+    .review__item--hide {
+        display: none;
     }
 
     .title {
@@ -183,6 +182,16 @@
     title {
         margin-bottom: 40px;
     }
+
+    .review__item--hide {
+        display: block;
+    }
+
+    .review__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0 76px;
+    }
 }
 
 /* дополнительный медиа запрос, используемый при достижении 680px */
@@ -210,13 +219,9 @@
         margin-bottom: 60px;
     }
 
-    .review__item {
-        max-width: 220px;
-    }
+    .review__item {}
 
-    .review__list {
-        gap: 20px;
-    }
+    .review__list {}
 }
 
 @media(max-width: 480px) {

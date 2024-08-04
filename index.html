@@ -193,33 +193,42 @@
         <!-- четвёртая секция (отзывы) -->
         <section class="review">
             <div class="container">
-                <div class="review__inner">
-                    <h2 class="review__title">What our Clients say</h2>
-                    <ul class="review__list">
-                        <li class="review__item">
+                <h2 class="title">What our Clients say</h2>
+                <ul class="review__list">
+                    <li class="review__item">
+                        <!-- blockquote - цитата -->
+                        <blockquote>
                             <p class="review__text">"As a tea enthusiast, I have tried teas from all over the world, but
                                 this tea store truly stands out. Their teas are of the highest quality and the variety
                                 is impressive. This is definitely a tea store that every tea lover should visit."</p>
-                            <h3 class="review__client">Alice</h3>
-                        </li>
-                        <li class="review__item">
+                            <!-- cite - источник цитаты -->
+                            <cite class="review__client">Alice</cite>
+                        </blockquote>
+                    </li>
+                    <li class="review__item">
+                        <blockquote>
                             <p class="review__text">"This tea store is my go-to for all my tea needs. Their selection is
                                 unbeatable and the quality of their teas is exceptional."</p>
-                            <h3 class="review__client">Mad-Hatter</h3>
-                        </li>
-                        <li class="review__item">
+                            <cite class="review__client">Mad-Hatter</cite>
+                        </blockquote>
+                    </li>
+                    <li class="review__item">
+                        <blockquote>
                             <p class="review__text">"If you're a tea lover, you must visit this tea store. The selection
                                 is vast and the quality is outstanding. I guarantee you won't be disappointed."</p>
-                            <h3 class="review__client">Dormouse</h3>
-                        </li>
-                        <li class="review__item">
+                            <cite class="review__client">Dormouse</cite>
+                        </blockquote>
+                    </li>
+                    <!-- модификатор review__item--hide(для скрытия или показа цитаты) -->
+                    <li class="review__item review__item--hide">
+                        <blockquote>
                             <p class="review__text">"I am not a big tea drinker, but this tea store has converted me. I
                                 highly recommend this tea store to anyone looking for a high-quality tea experience."
                             </p>
-                            <h3 class="review__client">March Hare</h3>
-                        </li>
-                    </ul>
-                </div>
+                            <cite class="review__client">March Hare</cite>
+                        </blockquote>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
