@@ -8,6 +8,13 @@
     font-size: 40px;
 }
 
+/* для скрытия блока (4 секция) */
+/* .review__item.review__item--hide {
+    display: none;
+} */
+
+
+
 /* для центрирования */
 .container {
     /* максимальная фиксированная ширина блока*/
@@ -238,6 +245,7 @@
 .review__list {
     display: flex;
     gap: 0 26px;
+    justify-content: center;
 }
 
 .review__item {
