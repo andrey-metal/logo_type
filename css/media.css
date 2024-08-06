@@ -247,8 +247,8 @@
         max-width: 170px;
     }
 
-    .title {
-        margin-bottom: 30px;
+    .review {
+        padding: 50px 0;
     }
 
     .review__list {
@@ -294,6 +294,18 @@
     }
 
     .title {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    /* задаём размер элемента по главной оси */
+    .review__item {
+        flex-basis: 100%;
+    }
+
+    /* убираем последний и первый элементы */
+    .review__item:last-child,
+    .review__item:first-child {
+        display: none;
     }
 }
