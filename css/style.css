@@ -265,3 +265,21 @@
     font-size: 20px;
     font-style: normal;
 }
+
+/* пятая секция */
+.blog__list {
+    display: flex;
+    gap: 40px 58px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.blog__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 542px;
+}
+
+.blog__img {
+    max-width: 270px;
+}
