@@ -271,6 +271,7 @@
     display: flex;
     gap: 40px 58px;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
 .blog__item {
@@ -286,22 +287,25 @@
     line-height: auto;
 }
 
-.blog__img {
+.blog__item-img {
     max-width: 270px;
     max-height: 180px;
     margin-right: 20px;
 }
 
-.blog__text {
+.blog__item-text {
     font-family: 'Cormorant';
     font-size: 24px;
     font-weight: 400;
     padding-bottom: 10px;
-    max-width: 252px;
 }
 
-
-
-.blog__name {
+.blog__item-name {
     padding-bottom: 48px;
+}
+
+.blog__view {
+    padding-bottom: 150px;
+    display: block;
+    text-align: center;
 }
