@@ -309,3 +309,41 @@
     display: block;
     text-align: center;
 }
+
+/* шестая секция */
+.registration {
+    background-image: url('/project2/logo_type/source/image/jpg/bg-registration.jpg');
+    background-color: #F7F2EA;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 100px 0;
+}
+
+.registration__title {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.registration__inner {
+    display: flex;
+}
+
+/* седьмая секция */
+.prioritise {
+    margin: 150px 0;
+}
+
+.prioritise__list {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 0 49px;
+}
+
+.prioritise__item-title {
+    margin-bottom: 10px;
+}
+
+.prioritise__item-text {
+    margin-bottom: 40px;
+}
