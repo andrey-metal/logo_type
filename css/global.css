@@ -16,7 +16,7 @@ body {
     /* насыщенность (толщина) текста */
     font-weight: 300;
     /* величина пространства между строками*/
-    line-height: 1.5;
+    line-height: normal;
     /* для затемнённого фона */
     position: relative;
 }

@@ -175,7 +175,6 @@
     /* максимально-возможная ширина(ограничение) */
     max-width: 789px;
     /* величина пространства между строками в тексте */
-    line-height: 1;
     /* по-умолчанию h(заголовки) имеют font-weight = 700, поэтому меняем */
     font-weight: 400;
 }
@@ -185,7 +184,6 @@
     font-size: 24px;
     margin-bottom: 48px;
     max-width: 557px;
-    line-height: normal;
 }
 
 /* 2 секция */
@@ -199,7 +197,6 @@
     font-size: 40px;
     /* стиль шрифта */
     font-style: italic;
-    line-height: normal;
     max-width: 704px;
     /* выставляем текст по центру с margin вверх-вниз = 150*/
     margin: 150px auto;
@@ -239,7 +236,6 @@
 .review {
     background-color: #F7F2EA;
     padding: 60px 0;
-    margin-bottom: 150px;
 }
 
 .review__list {
@@ -267,56 +263,86 @@
 }
 
 /* пятая секция */
+.blog {
+    padding: 150px 0;
+}
+
 .blog__list {
     display: flex;
     gap: 40px 58px;
     flex-wrap: wrap;
-    margin-bottom: 60px;
 }
 
 .blog__item {
-    flex-basis: 522px;
+    flex-basis: 542px;
     display: flex;
+    gap: 0 20px;
 }
 
 .blog__item-content {
     display: flex;
     flex-direction: column;
-    font-size: 13px;
-    font-weight: 300;
-    width: 252px;
-}
-
-.blog__item-img {
-    max-width: 270px;
-    max-height: 180px;
-    margin-right: 20px;
 }
 
 .blog__item-text {
     font-family: 'Cormorant';
     font-size: 24px;
     font-weight: 400;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    min-height: 86px;
 }
 
 .blog__item-name {
-    padding-bottom: 48px;
+    font-size: 13px;
+}
+
+.blog__item-read {
+    font-size: 13px;
+    margin-top: auto;
+    /* добавляем секции собственные оси координат */
+    position: relative;
+}
+
+/* добавляем к ссылке (read) стрелочку */
+/* content позволяет вставлять генерируемое содержание в текст веб-страницы, которое первоначально в тексте отсутствует.
+Применяется совместно с псевдоэлементами ::after и ::before, они соответственно указывают отображать 
+новое содержимое после или до элемента, к которому добавляются. */
+.blog__item-read::after {
+    content: '';
+    /* путь к стрелке */
+    background-image: url('/project 2/logo_type/source/image/svg/read-arrow.svg');
+    /* размеры стрелки */
+    width: 5px;
+    height: 10px;
+    /* изображение становиться абсолютным(никак не взаимодействует с другими элементами)
+    без этого свойства картинка не появится */
+    position: absolute;
+    /* смещение картинки(position: relative смещения не будет) */
+    bottom: 3px;
+    margin-left: 8px;
 }
 
 .blog__view {
-    padding-bottom: 150px;
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 12px 41px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border: 1px solid #151618;
+    width: 152px;
 }
 
 /* шестая секция */
 .registration {
-    background-image: url('/project2/logo_type/source/image/jpg/bg-registration.jpg');
-    background-color: #F7F2EA;
-    background-repeat: no-repeat;
-    background-position: right;
     padding: 100px 0;
+    /* фоновый цвет */
+    background-color: #F7F2EA;
+    /* фоновое изображение */
+    background-image: url('/project 2/logo_type/source/image/png/bg-registration.png');
+    /* отключение повтора фонового изображения */
+    background-repeat: no-repeat;
+    /* размещение фонового изображения */
+    background-position: bottom right;
 }
 
 .registration__title {
@@ -326,6 +352,87 @@
 
 .registration__inner {
     display: flex;
+    gap: 60px 40px;
+}
+
+.registration__text {
+    line-height: 1.5;
+    flex-basis: 580px;
+}
+
+/* свойства для form */
+.registration__form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 580px;
+}
+
+.registration__email {
+    width: 434px;
+    margin-right: 25px;
+    /* убираем границы form для email */
+    border: none;
+    border-bottom: 1px solid #B8B58B;
+    /* transparent - значение по умолчанию — прозрачный фон */
+    background-color: transparent;
+    padding: 3px 15px;
+    /* стили для вводимого текста */
+    color: #151618;
+    font-family: 'OpenSans', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* обращаемся к placeholder */
+/* для переопределения placeholder стили нужно прописать */
+.registration__email::placeholder {
+    color: #B8B58B;
+    font-family: 'OpenSans', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.registration__btn {
+    padding: 12px 41px;
+    border: 1px solid #151618;
+    /* изменение цвета backgroundа */
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.checkbox__text {
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 20px;
+}
+
+.registration__label {
+    margin-top: 16px;
+    display: flex;
+}
+
+/* уничтожаем checkbox, появившийся по-умолчанию */
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+/* на место уничтоженного checkbox ставим свой */
+.checkbox__style {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #151618;
+    margin-top: 5px;
 }
 
 /* седьмая секция */
@@ -337,7 +444,6 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
-    gap: 0 49px;
 }
 
 .prioritise__item-title {
