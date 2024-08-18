@@ -1,6 +1,15 @@
 /* прописываем медиа-запросы(для адаптива) */
 /* в () записываем условие, при котором будет производиться media-запрос */
 /* в {} обращаемся к html-файлу, который хотим видоизменить */
+
+/* адаптив при достижении экрана 1180px */
+@media(max-width: 1180px) {
+    .blog__item {
+        flex-basis: calc(460px + (542 - 460) * ((100vw - 1180px) / (1200 - 320)));
+    }
+}
+
+
 /* адаптив при достижении экрана 1000px */
 @media(max-width: 1000px) {
     .user-actions__item--search {
@@ -46,6 +55,35 @@
     /* обращаемся к последнему элементу review__item */
     .review__item:last-child {
         display: none;
+    }
+
+    /* 5 секция */
+    .blog {
+        padding: 120px 0;
+    }
+
+    .blog__item-img {
+        max-width: 230px;
+    }
+
+    .blog__item {
+        flex-basis: 460px;
+    }
+
+    .blog__list {
+        gap: 67px 20px;
+    }
+
+    .blog__item-img {
+        max-width: 230px;
+    }
+
+    .blog__item {
+        flex-basis: 460px;
+    }
+
+    .blog__list {
+        gap: 67px 20px;
     }
 }
 
