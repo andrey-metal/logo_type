@@ -5,7 +5,11 @@
 /* адаптив при достижении экрана 1180px */
 @media(max-width: 1180px) {
     .blog__item {
-        flex-basis: calc(460px + (542 - 460) * ((100vw - 1180px) / (1200 - 320)));
+        flex-basis: calc(470px + (542 - 470) * ((100vw - 1180px) / (1200 - 320)));
+    }
+
+    .blog__item-img {
+        max-width: calc(230px + (270 - 230) * ((100vw - 1180px) / (1200 - 320)));
     }
 }
 
