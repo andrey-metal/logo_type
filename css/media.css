@@ -3,7 +3,25 @@
 /* в {} обращаемся к html-файлу, который хотим видоизменить */
 
 /* адаптив при достижении экрана 1180px */
+
+@media(max-width: 1240px) {
+    .registration {}
+
+    .registration__title {
+        text-align: center;
+    }
+
+    .registration__inner {
+        gap: 60px 0;
+        flex-direction: column;
+    }
+}
+
 @media(max-width: 1180px) {
+    .blog__list {
+        justify-content: center;
+    }
+
     .blog__item {
         flex-basis: calc(470px + (542 - 470) * ((100vw - 1180px) / (1200 - 320)));
     }
@@ -13,9 +31,8 @@
     }
 }
 
-
-/* адаптив при достижении экрана 1000px */
-@media(max-width: 1000px) {
+/* адаптив при достижении экрана 1010px */
+@media(max-width: 1010px) {
     .user-actions__item--search {
         margin-left: 30px;
     }
@@ -88,6 +105,18 @@
 
     .blog__list {
         gap: 67px 20px;
+        justify-content: left;
+    }
+
+    /* 6 секция */
+    .registration {
+        padding: 60px 0;
+    }
+
+    /* 7 секция */
+    .prioritise {
+        padding: 120px 0;
+
     }
 }
 
